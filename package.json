@@ -1,0 +1,28 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@nuxt/types": "^2.17.0",
+    "@nuxt/typescript-build": "^3.0.1",
+    "@nuxtjs/tailwindcss": "^6.7.0",
+    "@types/formidable": "^2.0.6",
+    "@types/node": "^18",
+    "@types/request-ip": "^0.0.38",
+    "nuxt": "^3.5.2"
+  },
+  "dependencies": {
+    "formidable": "^3.2.5",
+    "pdfjs": "^2.5.0",
+    "pdfjs-dist": "^3.7.107",
+    "request-ip": "^3.3.0",
+    "uuid": "^9.0.0"
+  }
+}

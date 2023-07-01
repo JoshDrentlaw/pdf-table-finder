@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-gray-200;
+}
+
+.router-link-active:not(#site-brand) {
+    @apply text-green-700;
+}
