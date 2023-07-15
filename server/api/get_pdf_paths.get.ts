@@ -23,7 +23,6 @@ export default defineEventHandler(async event => {
             }
         })
     })
-    console.log(paths)
 
     return { paths }
 })

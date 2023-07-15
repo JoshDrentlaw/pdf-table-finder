@@ -25,7 +25,7 @@ export default defineEventHandler(async event => {
         })
     })
 
-    fields.pdfFiles.forEach((file: any) => {
+    return fields.pdfFiles.map((file: any) => {
         fs.mkdir(path.join(uploadDir, fields.uuid), (err) => {
             if (err && err.code !== 'EEXIST') {
                 throw err
@@ -37,8 +37,6 @@ export default defineEventHandler(async event => {
             }
         })
 
-        // return path.join('uploaded_files', file.originalFilename)
+        return path.join('uploaded_files', fields.uuid, file.originalFilename)
     })
-
-    return true
 })

@@ -9,4 +9,4 @@ dist
 .DS_Store
 .fleet
 .idea
-public/uploaded_files/*
+public/uploaded_files/**/*
